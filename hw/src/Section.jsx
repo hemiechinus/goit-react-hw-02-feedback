@@ -3,8 +3,6 @@ import React from "react";
 
 import styled from "styled-components";
 
-const Title = styled.h2`
-`
 const BoxTitle = styled.div`
   margin-top: 15px;
   border: 1px solid;
@@ -21,7 +19,7 @@ export const Section = ({ title, children }) => {
     return (
     <>
     <BoxTitle>
-    <Title>{title}</Title>
+    <h2>{title}</h2>
     {children}
     </BoxTitle>
     </>
