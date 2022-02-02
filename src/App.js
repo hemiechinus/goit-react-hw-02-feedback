@@ -10,10 +10,10 @@ export class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  changeState = (e) => {
-    const name = e.target.name;
+  changeState = (key) => {
+  //  const name = e.target.name;
     this.setState((prevState) => ({
-      [name]: prevState[name] + 1,
+      [key]: prevState[key] + 1,
     }));
   };
   

@@ -10,9 +10,8 @@ export const FeedBackButton = ({options,onFeedback}) =>{
             <button
             className={s.btn}
             key={option}
-            name={option}
             type="button"
-            onClick={onFeedback}
+            onClick={()=> onFeedback(option)}
             >
             {option}
             </button>
